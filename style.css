@@ -1,12 +1,12 @@
-/* Styles Global */
+/* ===== STYLES GLOBAUX ===== */
 body {
     margin: 0;
-    padding-top: 120px;
-    background-color: #FFEEDB;
+    padding-top: 120px; /* Espace pour le header fixe */
+    background-color: #FFEEDB; /* Couleur de fond douce */
 }
 
-/* Header */
-#header {
+/* ===== EN-TÊTE (HEADER) ===== */
+#header { 
     background: #97D109;
     width: 100%;
     position: fixed;
@@ -17,7 +17,7 @@ body {
     justify-content: space-between;
     padding: 10px 20px;
     box-sizing: border-box;
-    z-index: 9999;
+    z-index: 100; /* Assure que le header reste au-dessus des autres éléments */
 }
 
 #elemheader {
@@ -37,7 +37,7 @@ body {
     padding: 0;
 }
 
-#titre {
+#titre { 
     font-family: 'Cherry Bomb One', sans-serif;
     font-weight: 400;
     font-size: 45px;
@@ -48,24 +48,24 @@ body {
     margin-bottom: 10px;
 }
 
-#header-center {
+#header-center { 
     text-align: center;
     flex: 1;
 }
 
-.header {
+.header { /* Noir pour les liens de l'en-tête */ 
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
 
-.header:hover {
-    background-color: #FEC851;
+.header:hover { /* Jaune foncé au survol */
+    background-color: #FEC851; 
     border-radius: 17.5px;
     padding: 5px;
 }
 
-#visited {
-    color: #920DD7;
+#visited { /* Violet pour le lien actif */
+    color: #920DD7; 
     text-decoration: none;
 }
 
@@ -78,7 +78,7 @@ body {
     color: #000;
 }
 
-
+/* ===== GRILLES DE PRODUITS ===== */
 .grillebox {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -87,12 +87,11 @@ body {
     justify-content: center;
     align-items: stretch;
     max-width: 1400px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
-
-.box {
-    background: #A6653F;
+.box { 
+    background: #A6653F; 
     padding: 15px;
     border-radius: 30px;
     font-family: 'Raleway', sans-serif;
@@ -114,7 +113,7 @@ body {
     height: 80%;
 }
 
-.grillebox2 {
+.grillebox2 { 
     display: grid;
     grid-template-columns: repeat(3, 320px);
     gap: 40px;
@@ -123,7 +122,7 @@ body {
     align-items: stretch;
 }
 
-.box2 {
+.box2 { 
     background: #A6653F;
     padding: 25px;
     border-radius: 30px;
@@ -135,12 +134,12 @@ body {
     color: #ffffff;
 }
 
-.imagebox {
+.imagebox { 
     width: 100%;
     border-radius: 20px;
 }
 
-.box p {
+.box p { 
     font-size: 16px;
     color: #ffffff;
 }
@@ -150,7 +149,8 @@ body {
     color: #ffffff;
 }
 
-.bouton {
+/* ===== BOUTONS ===== */
+.bouton { /* Noir pour les boutons principaux */
     display: inline-block;
     background: black;
     color: white;
@@ -161,33 +161,33 @@ body {
     text-align: left;
 }
 
-.bouton:hover {
+.bouton:hover { /* Jaune clair au survol */
     background: #FEC851;
     color: black;
     text-decoration: underline;
     font-style: italic;
 }
 
-
-.bouton2 {
+.bouton2 { /* Vert pour les boutons de produits */
     display: inline-block;
-    background: #47C75A;
+    background: #47C75A; 
     color: black;
     padding: 10px 20px;
     border-radius: 30px;
     margin-top: 10px;
-    text-decoration: none ;
+    text-decoration: none;
     text-align: center;
     font-weight: bold;
 }
 
-.bouton2:hover {
+.bouton2:hover {  /* Vert clair au survol */
     background: #97D109;
     color: black;
     text-decoration: underline;
     font-style: italic;
 }
 
+/* ===== STRUCTURE DES BOX ===== */
 .ensemblebox {
     text-align: left;
     display: flex;
@@ -202,7 +202,7 @@ body {
     margin-left: 10px;
 }
 
-
+/* ===== LISTES AVEC ICÔNES ===== */
 .listemoji {
     margin: 0 auto;
     padding: 0;
@@ -235,13 +235,7 @@ body {
     object-fit: contain;
 }
 
-
-.produitsbox {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-
+/* ===== IMAGES DES PRODUITS ===== */
 .produitsimages {
     display: flex;
     justify-content: center;
@@ -276,7 +270,7 @@ body {
     height: auto;
 }
 
-
+/* ===== PAGE DE PRODUIT ===== */
 .ensemblepage {
     width: 1100px;
     margin: 40px auto;
@@ -348,10 +342,7 @@ body {
     margin-right: 10px;
 }
 
-
-
-
-
+/* ===== PAGE HISTOIRE ===== */
 .Texte1 {
     width: 790px;
     border-right: 20px solid #A6653F;
@@ -436,6 +427,7 @@ h3 {
     width: 100%;
 }
 
+/* ===== CONTACT ET RSE ===== */
 .contactcontenue {
     display: flex;
     align-items: flex-end;
@@ -453,7 +445,6 @@ h3 {
     width: 155px;
     height: auto;
 }
-
 
 .box .lirse {
     font-size: 20px;
@@ -481,11 +472,17 @@ h3 {
     text-align: justify;
 }
 
+.boutonrse {
+    position: relative;
+    display: inline-block;
+    margin-top: auto;
+}
 
 #abricot2 {
     position: absolute;
-    top: 852px;
-    left: 285px;
-    width: 5%;
-    height: 10%;
+    width: 80px;
+    height: auto;
+    top: -45px;
+    right: 190px;
+    z-index: 10;
 }
